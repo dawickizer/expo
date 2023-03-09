@@ -9,8 +9,8 @@
     "web": "expo start --web",  
     "test": "jest",
     "testChanged": "jest -o",
-    "testWatch": "jest -u --watchAll",
-    "testWatchChanged": "jest -u --watch"
+    "testWatch": "jest --watchAll",
+    "testWatchChanged": "jest --watch"
   },
   "jest": {
     "preset": "jest-expo",
