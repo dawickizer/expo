@@ -74,6 +74,7 @@ source ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
     - Follow steps for creating a device
 - `npx expo start`
 - Navigate to the Android Studio Emulator by pressing the `a` key in your terminal session
+- **Note:** If you spin the frontend down (ctrl+c) and later spin it back up again with `npx expo start` and then try to press the `a` key to bring up the Android emulated device it will not work. To solve this you will need to close out of the app manually on the device or cold boot the device. This is because the device seems to maintain a stale state of the Expo Go App. You can restart the app by swiping it up and off the screen, or you can cold boot the device by going into Android Studio>More Actions>Virtual Device Manager, locate your device, click the "...", click "Cold Boot Now".
 - Android Emulator Setup Docs: https://docs.expo.dev/workflow/android-studio-emulator/
 
 ## Conclusion
