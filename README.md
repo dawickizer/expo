@@ -79,3 +79,13 @@ source ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 ## Conclusion
 
 - At this point you should have the app spun up and the ability to see live code changes with your mobile device (via Expo Go), the browser, iOS Simulator, and/or Android Studio Emulator
+
+# Testing with Jest/Jest Expo
+
+- Run all tests: `npm run test`
+- Run all tests in watch mode: `npm run testWatch`
+- Run tests for changed files (tracked by git): `npm run testChanged`
+- Run tests for changed files (tracked by git) in watch mode: `npm run testWatchChanged`
+- Code coverage will be output in the terminal as well as in `coverage/lcov-report/index.html` which can be opened up in any browser
+- Expo Jest Docs: https://docs.expo.dev/guides/testing-with-jest/
+- Jest CLI Docs: https://jestjs.io/docs/cli
