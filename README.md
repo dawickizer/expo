@@ -89,3 +89,8 @@ source ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
 - Code coverage will be output in the terminal as well as in `coverage/lcov-report/index.html` which can be opened up in any browser
 - Expo Jest Docs: https://docs.expo.dev/guides/testing-with-jest/
 - Jest CLI Docs: https://jestjs.io/docs/cli
+
+# Linting
+
+- Run the linter: `npm run lint`
+- Run the linter and fix any issues: `npm run lintFix`
