@@ -2,11 +2,17 @@ import { StyleSheet, Image } from 'react-native';
 
 interface Props {
   placeholderImageSource?: any,
+  selectedImage?: any
 }
 
 export default function ImageViewer(props: Props) {
+
+	const imageSource = props.selectedImage !== null
+		? { uri: props.selectedImage }
+		: props.placeholderImageSource;
+
 	return (
-		<Image source={props.placeholderImageSource} style={styles.image} />
+		<Image source={imageSource} style={styles.image} />
 	);
 }
 
